@@ -1,84 +1,205 @@
 body {
-	background: blue;
+	background: #efeeea;
 	margin: 0;
 	font-family: 'domestos98', 'Myriad Pro', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	width:100%;
+}
+div {
+display: block;
+}
+#full-bleed {
+	background: url('../images/red-bg.png');
+	background-position: center center;
+	background-size: cover;
+}
+.container {
+	width: 1402px;
+	margin: 0 
 }
 #header {
-	background: red;
+	width: 100%;
 }
-
-#headxer.img {
+#header.img {
 	height:auto;
 	width: 100%;
 }
-
-
-div{
+ul.navs{
+	list-style-type: none;
+	margin: 16px 0 16px 0;
+	padding: 0;
+	float: right;
+	font-size: 10px;
+}
+li a {
+	color: #000;
+	text-decoration: none;
+	padding: 0 7px 0 7px;
+}
+li {
+	display: inline;
+	float: left;
+}
+li.no-separator {
+	border-right: none;
+}
+/*
+li.social-media a {
+	padding: 0 0 0 5px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	text-indent: -9999px;
+	border-right: none;
+	line-height: 1em;
+	margin: -3px 0 0 3px;
+	font-size: 1px;
+	font-family: 'test';
+	position: absolute;
+}
+*/
+li.social-media {
+border-right: none;
+line-height: 1em;
+margin: -3px 0 0 3px;
+}
+.facebook {
+	background: url('../images/facebook.png') no-repeat top left;
+}
+.twitter {
+	background: url('../images/twitter.png') no-repeat top left;
+}
+.instagram {
+	background: url('../images/instagram.png') no-repeat top left;
+}
+h1 {
+	margin: 0;
+	clear: both;
+	color: #f50018;
+	font-style: italic;
+	font-size: 26px;
+	font-weight: normal;
+	display: block;
+	font-size: 2em;
+	margin-before: 0.67em;
+	margin-after: 0.67em;
+	font-weight: bold;
 	text-align: center;
 }
- 	
-h1{
+h2 {
+	display: block;
+	text-align: center;
+}
+
+.products {
+	margin-top: 30px;
+}
+.product.cappuccino {
+	float: left;
+	width: 27%;
+	padding-top: 0px;
+}
+
+.product.mochaccino {
+	width: 26%;
+	float: left;
+	padding-top: 0px;
+}
+.product.latte-macchiato {
+	float: left;
+	width: 27%;
+	padding-top: 0px;
+}
+.product.caffe {
+	width: 20%;
+	float: left;
+	padding-top: 0px;
+}
+.products h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: -1px;
+}
+h3 {
+	margin: 0;
+	font-weight: normal;
+	display: block;
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+.nutrition-facts {
+	background: url('../images/badge.png') no-repeat top center;
+	color: #8f8e8e;
+	text-align: center;
+	width: 29px;
+	height: 33px;
+	font-size: 10px;
+	float: right;
+	margin: 15px 61px 0 5px;
+	line-height: .8em;
+}
+.nutrition-facts.longer {
+	clear: right;
+	margin: 10px 0 0 5px;
+	font-size: 9px;
+}
+footer {
+clear: both;
+background: url('..images/footer-gradient.jpg') repeat-x top center;
+padding: 8px;
+font-size: 13px;
+}
+footer p {
+	margin: 0;
+}
+.copyright {
 	color: black;
-   	font-size: 40pt;
-   	text-align: center;
+}
+.red-link {
+	color: #ff0000;
+}
+.right {
+	float: right;
 }
 
-h2{
-	color: orange;
-	font-size: 30pt;
-	text-align: center;
+#fixedContainer {
+/* position: fixed; */
+top: 0;
+left: 0;
+width: 856px;
+margin: 0 auto;
 }
-
-h3{
-	color: #4CBB17;
-	font-size: 20pt;
- 	text-align: center;
+,state-body {
+width: 856px;
+height: 448px;
+float: left;
 }
-/*  suppress numbers in ordered lists, set line height, center */	
-ol{
-	list-style-type: none;
-    line-height: 25px;
-    text-align: center;
+.stage.first {
+margin-top: 33px;
 }
-/*  suppress bullets in unordered lists, set line height, center*/	
-ul{
-    list-style-type: none;
-    line-height: 25px;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 1px;
-    border-style: solid;
-    border-left: 10%;
-    border-right: 40%;
+.stage-head {
+width: 856px;
+height: 12px;
+float: left;
+background: url('../images/stage_head.png') no-repeat top center;
+position: relative;
 }
-li{
-	color: blue;
-	list-style-type: none;
-	position: relative;
-    text-align: center;
+.stage-content {
+width: 850px;
+height: 448px;
+float: left;
+background: #fff;
+position: relative;
+z-index: 2;
 }
-/*  center in middle of page */	
-table.center{
-	width:30%;
-	margin-left:35%; 
-    margin-right:35%;
+.stage-left {
+width: 3px;
+height: 448px;
+float: left;
+background: url('../images/stage_left.png') no-repeat top center;
 }
-
-/*  return to page's internal directory*/
-.return{
-	font-family: Times, Georgia, Serif;
-	font-size: 50;
+.stage-left img {
+border: 0;
+-ms-interpolation-mode: bicubic;
+vertical-align: middle;
 }
-/*  formatting of page's top directory*/
-.top{
-	font-family: "Arial", Georgia, Serif;
-	font-size: 75;
-}
-/*  return to page's top directory from bottom of page*/
-#returntop{
-	font-family: "Arial", sans-serif;
-	font-size: 75;
-}
-
-
